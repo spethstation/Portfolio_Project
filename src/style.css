@@ -1,0 +1,56 @@
+:root {
+  --first-color: #9b99c8;
+  --second-color: #60bdc4;
+  --third-color: #efb5c8;
+  --fourth-color: #f7eb80;
+}
+
+body {
+  margin-auto: 0px;
+  text-align: center;
+  background-image: url("pinballbg.png");
+  background-repeat: repeat;
+  background-color: var(--first-color);
+  background-size: 30%;
+}
+
+h1 {
+  font-family: "Bakbak One", cursive;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+h2 {
+  font-family: "Bakbak One", cursive;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: var(--fourth-color);
+}
+
+.index-wrapper {
+  padding: 175px 28px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.connect-text {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  color: var(--third-color);
+}
+
+.linked-img {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
