@@ -36,10 +36,29 @@ a {
   color: var(--fourth-color);
 }
 
+.navbar {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+.navbar a {
+  color: var(--third-color);
+}
+
+.navbar a:hover {
+  color: var(--fourth-color);
+}
+
 .index-wrapper {
-  padding: 175px 28px;
+  padding: 175px 28px 50px 28px;
   background-color: #fff;
   border-radius: 5px;
+}
+
+.greeting-text {
+  padding: 20px 120px;
+  line-height: 2;
 }
 
 .connect-text {
@@ -48,6 +67,7 @@ a {
   font-weight: 500;
   font-style: oblique;
   color: var(--third-color);
+  text-shadow: 1px 1px 1px #000;
 }
 
 .linked-img {
