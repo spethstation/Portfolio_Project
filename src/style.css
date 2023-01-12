@@ -8,10 +8,7 @@
 body {
   margin: 0 auto;
   text-align: center;
-  background-image: url("pinballbg.png");
-  background-repeat: repeat;
   background-color: var(--first-color);
-  background-size: 30%;
 }
 
 h1 {
@@ -29,14 +26,42 @@ h2 {
   margin-bottom: 18px;
 }
 
+h3 {
+  font-family: "Bakbak One", cursive;
+  font-size: 48px;
+  color: #fff;
+}
+
 p {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
 
 a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
   color: var(--fourth-color);
   text-shadow: 1px 1px 1px #000;
+  text-decoration: none;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid darkcyan;
+  background-color: var(--second-color);
+  box-shadow: 2px 2px 1px darkgrey;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--fourth-color);
+  border: 1px solid var(--first-color);
+}
+
+.col-md-6 {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .navbar {
@@ -51,11 +76,13 @@ a {
 
 .navbar a:hover {
   color: var(--fourth-color);
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .index-wrapper {
-  border: 1px dotted #000;
-  padding: 50px 16px 16px 16px;
+  border: 2px solid #000;
+  padding: 45px 10px 10px 10px;
   box-shadow: 20px 20px 0px #db3d86;
   background-color: #fff;
   border-radius: 12px;
@@ -69,13 +96,45 @@ a {
   border-radius: 12px;
   padding-top: 175px;
   padding-bottom: 20px;
-  border: 1px dotted #000;
+  border: 2px solid #000;
+}
+
+.bg-2 {
+  background: #fff;
+  border-radius: 12px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  border: 2px dashed #000;
+}
+
+.second-heading {
+  margin: 10px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 .greeting-text {
-  text-align: justify;
+  text-align: center;
   padding: 20px 120px;
   line-height: 2;
+}
+
+.about-section {
+  margin-top: 10px;
+  padding: 40px 30px;
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about-section img {
+  padding: 14px;
+  background-color: #fff;
+  margin: 60px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 20px 20px 0px #db3d86;
 }
 
 .img-box {
@@ -101,11 +160,15 @@ a {
 .linked-img {
   font-size: 40px;
   padding-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.linked-img:hover {
+  color: var(--second-color);
 }
 
 @media (max-width: 768px) {
   .greeting-text {
-    text-align: left;
     padding: 25px;
   }
 
@@ -128,5 +191,9 @@ a {
 @media (max-width: 280px) {
   h1 {
     font-size: 56px;
+  }
+
+  h3 {
+    font-size: 38px;
   }
 }
