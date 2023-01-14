@@ -162,6 +162,16 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
   text-shadow: 1px 1px 1px lightslategray;
+  padding-bottom: 10px;
+}
+
+.portfolio-section img {
+  display: block;
+  margin: 0px auto;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #000;
 }
 
 .img-box {
@@ -195,6 +205,12 @@ button:hover {
   color: var(--second-color);
 }
 
+@media (max-width: 992px) {
+  .navbar-toggler {
+    background-color: var(--fourth-color);
+  }
+}
+
 @media (max-width: 768px) {
   .greeting-text {
     padding: 25px;
@@ -218,10 +234,36 @@ button:hover {
 
 @media (max-width: 280px) {
   h1 {
-    font-size: 56px;
+    font-size: 54px;
   }
 
   h3 {
     font-size: 38px;
+  }
+
+  .second-heading {
+    text-align: center;
+    padding-left: 3px;
+  }
+
+  .content-section img {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .second-heading {
+    text-align: center;
+    padding-left: 3px;
+    font-size: 54px;
+  }
+
+  .content-section {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+
+  .content-section img {
+    padding: 7px;
   }
 }
