@@ -195,6 +195,11 @@ button:hover {
   text-shadow: 1px 1px 1px #000;
 }
 
+.pacman {
+  text-align: center;
+  display: block;
+}
+
 .linked-img {
   font-size: 40px;
   padding-bottom: 20px;
