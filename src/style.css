@@ -185,6 +185,10 @@ button:hover {
   margin: 25px auto;
 }
 
+.second-p {
+  color: var(--fourth-color);
+}
+
 .connect-text {
   font-size: 22px;
   padding-top: 20px;
