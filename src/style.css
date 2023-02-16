@@ -132,7 +132,7 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
   max-width: 1000px;
-  text-shadow: 1px 1px 1px lightslategray;
+  text-shadow: 1px 1px 1px darkslategray;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
