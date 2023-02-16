@@ -153,16 +153,15 @@ button:hover {
   padding: 20px 30px;
   text-align: left;
   max-width: 1000px;
-  text-shadow: 1px 1px 1px lightslategray;
+  text-shadow: 1px 1px 1px darkslategray;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-section p {
-  text-align: center;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  text-shadow: 1px 1px 1px lightslategray;
+  text-shadow: 1px 1px 1px darkslategray;
   padding-bottom: 10px;
 }
 
@@ -185,7 +184,7 @@ button:hover {
   margin: 25px auto;
 }
 
-.second-p {
+p:nth-child(odd) {
   color: var(--fourth-color);
 }
 
