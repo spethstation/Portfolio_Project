@@ -119,6 +119,11 @@ button:hover {
   padding-left: 30px;
 }
 
+.recipes {
+  display: block;
+  margin: 0 auto;
+}
+
 .greeting-text {
   text-align: justify;
   padding: 20px 120px;
