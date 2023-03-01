@@ -2,7 +2,7 @@
   --first-color: #d3c6ee;
   --second-color: #8febbc;
   --third-color: #da649b;
-  --fourth-color: #fbf58f;
+  --fourth-color: #fffaa5;
 }
 
 body {
@@ -34,6 +34,7 @@ h3 {
   color: #fff;
   line-height: 1;
   margin-top: 20px;
+  text-shadow: 2px 2px 2px lightslategrey;
 }
 
 p {
@@ -132,7 +133,6 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
   max-width: 1000px;
-  text-shadow: 1px 1px 1px darkslategray;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -153,7 +153,6 @@ button:hover {
   padding: 20px 30px;
   text-align: left;
   max-width: 1000px;
-  text-shadow: 1px 1px 1px darkslategray;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -161,7 +160,6 @@ button:hover {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  text-shadow: 1px 1px 1px darkslategray;
   padding-bottom: 10px;
 }
 
