@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Ubuntu:wght@400;500;700&family=Work+Sans:ital,wght@0,200;0,300;0,400;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Josefin+Sans:wght@200;300;400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;1,400;1,500&family=Leckerli+One&family=Tilt+Neon&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/style.css" />
@@ -70,29 +70,47 @@
       </nav>
       <div class="index-wrapper">
         <div class="bg">
-          <h1>elspeth humble</h1>
-          <h2 class="title">front-end developer & designer</h2>
-          <br />
-          <p class="greeting-text">
-            Hello! Nice to meet you. 👋🏻 My name is Elspeth and I am a front-end
-            developer based in Nova Scotia, Canada. My specialties and interests
-            include web app development and design, and I also have over 12+
-            years experience as a graphic designer and illustrator.<br />
-            Thanks for visiting my website. Please check out my portfolio page
-            for some of my recent projects!
-          </p>
-          <button class="mb-3">
-            <a href="mailto:sighandgroan@gmail.com" title="email me!"
-              >work with me</a
-            >
-          </button>
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="hi-text">Hi, I'm</h1>
+              <h1>elspeth,</h1>
+              <h1 class="hi-text">a</h1>
+              <h2 class="title">front-end developer & designer.</h2>
+              <br />
+              <p class="greeting-text">
+                Nice to meet you. 👋🏻 My name is Elspeth (definitely
+                <i>not</i> Elizabeth!) and I am a front-end developer based in
+                Nova Scotia, Canada. My specialties and interests include web
+                app development and responsive design. I have over 12+ years of
+                experience as a graphic designer and illustrator, and I love to
+                mesh my artistry and code together to create lovely things.
+                <br />
+                <br />
+                Thanks for visiting my website. Please check out my portfolio
+                page for some of my recent projects!
+              </p>
+              <button class="mb-3">
+                <a href="mailto:elspeth.humble@gmail.com" title="email me!"
+                  >work with me</a
+                >
+              </button>
+            </div>
+            <div class="col-md-4 headshot">
+              <img
+                src="/src/headshot.png"
+                class="img-fluid rounded shadow-sm p-2 border"
+                width="375px"
+                alt="headshot"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <br />
       <div class="container img-box">
         <div class="row">
           <h2>Recent Projects</h2>
-          <div class="col-md-4">
+          <div class="col-md-4 project-thumb">
             <a href="/portfolio.html"
               ><img
                 src="/src/weatherapp.png"
@@ -110,7 +128,7 @@
             /></a>
             <p>Landing Page</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 project-thumb">
             <a href="/portfolio.html"
               ><img
                 src="/src/website1.png"
@@ -133,7 +151,7 @@
         target="_blank"
         ><i class="fa-brands fa-github icon-img mb-4 mt-3"></i
       ></a>
-      <a href="mailto:sighandgroan@gmail.com"
+      <a href="mailto:elspeth.humble@gmail.com"
         ><i class="fa-solid fa-envelope icon-img mb-4 mt-3"></i
       ></a>
     </div>

@@ -12,24 +12,23 @@ body {
 }
 
 h1 {
-  font-family: "Bakbak One", cursive;
-  font-weight: 700;
+  font-family: "Leckerli One", cursive;
+  color: #252525;
   font-size: 64px;
   text-shadow: -4px -1px 1px #a585ec;
 }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  text-transform: uppercase;
+  font-family: "Tilt Neon", cursive;
+  font-weight: 600;
+  font-size: 30px;
   color: var(--second-color);
   margin-bottom: 20px;
   text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
 }
 
 h3 {
-  font-family: "Bakbak One", cursive;
+  font-family: "Leckerli One", cursive;
   font-size: 48px;
   color: #fff;
   line-height: 1;
@@ -50,12 +49,15 @@ a {
 }
 
 button {
+  display: block;
+  margin: 0 auto;
   padding: 12px 18px;
   border-radius: 8px;
   border: 1px solid darkcyan;
   background-color: var(--third-color);
   box-shadow: 2px 2px 1px darkgrey;
   transition: all 0.5s ease-in-out;
+  position: inherit;
 }
 
 button:hover {
@@ -85,7 +87,7 @@ button:hover {
 }
 
 .index-wrapper {
-  border: 1px dashed #000;
+  border: 1px dashed #252525;
   padding: 45px 5px 5px 5px;
   box-shadow: 20px 20px 0px #a585ec;
   background-color: #fff;
@@ -97,33 +99,52 @@ button:hover {
 .bg {
   background: #fff;
   border-radius: 12px;
-  padding-top: 125px;
-  padding-bottom: 20px;
-  border: 1px solid #000;
+  padding: 100px 45px 20px 45px;
+  border: 1px solid #252525;
   max-width: 1100px;
-  margin: 0 auto;
+  text-align: left;
 }
 
 .bg-2 {
+  font-family: "Leckerli One", cursive;
   background: #fff;
   border-radius: 12px;
   padding-top: 70px;
   padding-bottom: 20px;
-  border: 2px dashed #000;
+  border: 2px dashed #252525;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.hi-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+  margin-bottom: -12px;
+  text-shadow: none;
+  display: inline;
+}
+
+.title {
+  display: inline;
+  font-size: 36px;
+  text-transform: none;
+  font-weight: 400;
+  padding-left: 6px;
 }
 
 .second-heading {
   margin: 5px;
   text-align: left;
   padding-left: 30px;
+  font-family: "Tilt Neon", cursive;
 }
 
 .greeting-text {
-  text-align: justify;
-  padding: 20px 120px;
+  text-align: left;
+  padding: 20px 10px 20px 0px;
   line-height: 2;
+  color: #252525;
+  font-size: 15px;
 }
 
 .content-section {
@@ -169,11 +190,16 @@ button:hover {
   border-radius: 3px;
   padding: 5px;
   background-color: #fff;
-  box-shadow: 3px 3px 3px #000;
+  box-shadow: 3px 3px 3px #6b6b6b;
+  transition: all 0.5s ease;
+}
+
+.portfolio-section img:hover {
+  filter: brightness(70%);
 }
 
 .img-box {
-  border: 1px dashed #000;
+  border: 1px dashed #252525;
   box-shadow: 20px 20px 0px #a585ec;
   background: #fff;
   border-radius: 12px;
@@ -182,8 +208,8 @@ button:hover {
   margin: 25px auto;
 }
 
-p:nth-child(odd) {
-  color: var(--fourth-color);
+.img-fluid {
+  max-width: 90%;
 }
 
 .connect-text {
@@ -201,16 +227,11 @@ p:nth-child(odd) {
   display: var(--set-inline);
 }
 
-.pacman {
-  text-align: center;
-  display: block;
-}
-
 .icon-img {
   font-size: 40px;
   padding: 15px;
   transition: all 0.5s ease-in-out;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #252525;
 }
 
 .icon-img:hover {
@@ -236,13 +257,6 @@ p:nth-child(odd) {
 
   h1 {
     font-size: 56px;
-  }
-
-  h1,
-  .title {
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 25px;
   }
 }
 
