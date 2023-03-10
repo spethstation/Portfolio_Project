@@ -212,8 +212,20 @@ button:hover {
   margin: 25px auto;
 }
 
-.img-fluid {
-  max-width: 90%;
+.port-bg {
+  background-color: #0000001c;
+  border-bottom-right-radius: 80px 80px;
+  box-shadow: 3px 3px 3px #6b6b6b;
+}
+
+.port-bg p {
+  padding: 10px 10px 8px 10px;
+}
+
+.project-sub-head p {
+  color: var(--fourth-color);
+  font-size: 18px;
+  padding-left: 15px;
 }
 
 .connect-text {
