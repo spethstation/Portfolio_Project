@@ -48,27 +48,9 @@ a {
   text-decoration: none;
 }
 
-button {
-  display: block;
-  margin: 0 auto;
-  padding: 12px 18px;
-  border-radius: 8px;
-  border: 1px solid darkcyan;
-  background-color: var(--third-color);
-  box-shadow: 2px 2px 1px darkgrey;
-  transition: all 0.5s ease-in-out;
-  position: inherit;
-}
-
-button:hover {
-  background-color: var(--second-color);
-  border: 1px solid var(--first-color);
-}
-
 .gradi {
   flex: 1 1 auto;
   padding: 11px 21px;
-  margin-top: 10px;
   text-align: center;
   transition: 0.5s;
   border-style: none;
@@ -81,6 +63,9 @@ button:hover {
     var(--x, 0) / 200%;
   color: white;
   border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  box-shadow: 2px 2px 1px darkgrey;
 }
 
 .gradi:hover {
@@ -297,8 +282,17 @@ button:hover {
   color: var(--second-color);
 }
 
-.tools {
-  color: var--(--second-color);
+.deploy-links {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.contact-link-bg {
+  border: 14px solid #fff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 20px 20px 0px #a585ec;
 }
 
 @media (max-width: 991px) {
@@ -372,5 +366,11 @@ button:hover {
   .content-section img {
     padding: 7px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .contact-links p {
+    font-size: 14px;
   }
 }
