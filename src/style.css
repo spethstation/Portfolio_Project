@@ -164,7 +164,7 @@ button:hover {
 .content-section img {
   padding: 14px;
   background-color: #fff;
-  margin: 20px auto;
+  margin: 100px auto;
   display: block;
   border-radius: 12px;
   box-shadow: 20px 20px 0px #a585ec;
@@ -196,6 +196,10 @@ button:hover {
 
 .portfolio-section img:hover {
   filter: brightness(70%);
+}
+
+.no-hover:hover {
+  filter: brightness(100%);
 }
 
 .img-box {
@@ -238,9 +242,10 @@ button:hover {
   color: var(--second-color);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .navbar-toggler {
     background-color: var(--fourth-color);
+    margin-right: 10px;
   }
 }
 
@@ -249,6 +254,12 @@ button:hover {
     padding: 25px;
     line-height: 1.75;
     text-align: left;
+  }
+
+  .content-section img {
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -293,5 +304,6 @@ button:hover {
 
   .content-section img {
     padding: 7px;
+    margin-top: 20px;
   }
 }
