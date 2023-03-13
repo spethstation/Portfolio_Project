@@ -18,7 +18,8 @@ h1 {
   text-shadow: -4px -1px 1px #a585ec;
 }
 
-h2 {
+h2,
+.contact-links a {
   font-family: "Tilt Neon", cursive;
   font-weight: 600;
   font-size: 30px;
@@ -30,7 +31,7 @@ h2 {
 h3 {
   font-family: "Leckerli One", cursive;
   font-size: 48px;
-  color: #fff;
+  color: #f8f9fa;
   line-height: 1;
   margin-top: 20px;
   text-shadow: 2px 2px 2px lightslategrey;
@@ -48,6 +49,49 @@ a {
   text-decoration: none;
 }
 
+.button-download {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid #252525;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-download:after {
+  content: "";
+  background-color: #a585ec;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-download:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.dots {
+  background: radial-gradient(circle, #a585ec 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #a585ec 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #a585ec 5%, transparent 6%),
+    radial-gradient(circle at top left, #a585ec 5%, transparent 6%),
+    radial-gradient(circle at top right, #a585ec 5%, transparent 6%);
+  background-size: 2em 2em;
+  background-color: #d3c6ee;
+  opacity: 1;
+}
+
 .gradi {
   flex: 1 1 auto;
   padding: 11px 21px;
@@ -61,7 +105,7 @@ a {
       var(--c1, #da649b)
     )
     var(--x, 0) / 200%;
-  color: white;
+  color: #f8f9fa;
   border-radius: 10px;
   display: block;
   margin: 10px auto;
@@ -86,6 +130,7 @@ a {
   font-size: 14px;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .navbar a {
@@ -102,14 +147,14 @@ a {
   border: 1px dashed #252525;
   padding: 45px 5px 5px 5px;
   box-shadow: 20px 20px 0px #a585ec;
-  background-color: #fff;
+  background-color: #f8f9fa;
   border-radius: 12px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .bg {
-  background: #fff;
+  background: #f8f9fa;
   border-radius: 12px;
   padding: 100px 45px 20px 45px;
   border: 1px solid #252525;
@@ -119,10 +164,20 @@ a {
 
 .bg-2 {
   font-family: "Leckerli One", cursive;
-  background: #fff;
+  background: #f8f9fa;
   border-radius: 12px;
   padding-top: 70px;
   padding-bottom: 20px;
+  border: 2px dashed #252525;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bg-3 {
+  font-family: "Leckerli One", cursive;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px 0px;
   border: 2px dashed #252525;
   max-width: 1100px;
   margin: 0 auto;
@@ -160,22 +215,23 @@ a {
 }
 
 .content-section {
-  padding: 20px 30px;
+  padding: 20px 30px 10px;
   text-align: left;
-  color: #fff;
+  color: #f8f9fa;
   font-size: 16px;
   font-weight: 500;
   max-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #beb2d6;
 }
 
 .contact-links h2 {
-  display: inline;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .content-section img {
   padding: 14px;
-  background-color: #fff;
+  background-color: #f8f9fa;
   margin: 100px auto;
   display: block;
   border-radius: 12px;
@@ -186,11 +242,18 @@ a {
   padding: 20px 30px;
   text-align: left;
   max-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #beb2d6;
+}
+
+.bg-2,
+.portfolio-section,
+.content-section {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-top: 1px;
 }
 
 .portfolio-section p {
-  color: #fff;
+  color: #f8f9fa;
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 10px;
@@ -201,7 +264,7 @@ a {
   margin: 0px auto;
   border-radius: 3px;
   padding: 5px;
-  background-color: #fff;
+  background-color: #f8f9fa;
   box-shadow: 3px 3px 3px #6b6b6b;
 }
 
@@ -216,7 +279,7 @@ a {
 .img-box {
   border: 1px dashed #252525;
   box-shadow: 20px 20px 0px #a585ec;
-  background: #fff;
+  background: #f8f9fa;
   border-radius: 12px;
   padding: 30px;
   max-width: 1100px;
@@ -286,13 +349,6 @@ a {
   margin: 0 auto;
   display: block;
   text-align: center;
-}
-
-.contact-link-bg {
-  border: 14px solid #fff;
-  padding: 14px;
-  border-radius: 12px;
-  box-shadow: 20px 20px 0px #a585ec;
 }
 
 @media (max-width: 991px) {
