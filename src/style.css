@@ -81,8 +81,17 @@ a {
   transform: translate(2px, 2px);
 }
 
-.tech-stack h2 {
-  margin-top: 50px;
+.tech-stack p {
+  line-height: 1em;
+  font-weight: 600;
+  padding-top: 8px;
+  color: var(--fourth-color);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.tech-stack i {
+  font-size: 35px;
 }
 
 .dots {
@@ -155,6 +164,11 @@ a {
   border-radius: 12px;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.index-wrapper p,
+.img-box p {
+  color: #6b6b6b;
 }
 
 .bg {
@@ -291,14 +305,17 @@ a {
 }
 
 .port-bg {
-  background-color: #0000001c;
+  background-color: #f8f9fa;
   border-bottom-right-radius: 80px 80px;
   box-shadow: 3px 3px 3px #6b6b6b;
+  margin-top: 2px;
 }
 
 .port-bg p {
   padding: 10px 30px 8px 10px;
   font-size: 15px;
+  color: #6b6b6b;
+  margin-bottom: 0px;
 }
 
 .port-heading {
@@ -342,7 +359,8 @@ a {
   font-size: 30px;
   padding: 3px 8px 3px 3px;
   transition: all 0.5s ease-in-out;
-  text-shadow: 1px 1px 1px #252525;
+  text-shadow: 1px 1px 1px #696969;
+  color: var(--third-color);
 }
 
 .repo-img:hover {
@@ -377,6 +395,10 @@ a {
     padding: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .contact-links a {
+    font-size: 20px;
   }
 
   h2 {
