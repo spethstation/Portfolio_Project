@@ -49,36 +49,40 @@ a {
   text-decoration: none;
 }
 
-.button-download {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid #252525;
+.button-resume {
+  background-color: var(--third-color);
+  border: 2px dashed #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
   cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.button-download:after {
-  content: "";
-  background-color: #a585ec;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
+.button-resume:hover {
+  background-color: #f8f9fa;
 }
 
-.button-download:hover:after {
-  top: 0px;
-  left: 0px;
+.button-resume:hover a {
+  color: #a585ec;
+}
+
+.button-resume:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.tech-stack h2 {
+  margin-top: 50px;
 }
 
 .dots {
