@@ -22,7 +22,7 @@ h2,
 .contact-links a {
   font-family: "Tilt Neon", cursive;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   color: var(--second-color);
   margin-bottom: 20px;
   text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
@@ -66,6 +66,7 @@ a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 20px 0px 30px 0px;
 }
 
 .button-resume:hover {
@@ -92,6 +93,11 @@ a {
 
 .tech-stack i {
   font-size: 35px;
+}
+
+.tech-stack h2 {
+  text-align: center;
+  font-size: 32px;
 }
 
 .dots {
@@ -135,8 +141,7 @@ a {
 }
 
 .col-md-6 {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px 20px;
 }
 
 .navbar {
@@ -243,14 +248,18 @@ a {
 }
 
 .contact-links h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 5px;
+}
+
+.contact-links a:hover {
+  color: #a585ec;
 }
 
 .content-section img {
   padding: 14px;
   background-color: #f8f9fa;
-  margin: 100px auto;
+  margin: 25px auto;
   display: block;
   border-radius: 12px;
   box-shadow: 20px 20px 0px #a585ec;
@@ -321,6 +330,73 @@ a {
 .port-heading {
   padding-top: 20px;
 }
+
+.strike {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.strike:before,
+.strike:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 15px;
+  margin-top: -0.5px;
+  bottom: 30%;
+  z-index: -1;
+  background: #a585ec;
+  display: block;
+}
+
+.strike:before {
+  left: -2.5px;
+}
+
+.strike:after {
+  right: 2.5px;
+  background: #a585ec;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strike:hover:before {
+  background: #a585ec;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strike:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+//**
+.strike {
+  position: relative;
+  margin: 15px;
+}
+
+.strike::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 15px;
+  background: #a585ec;
+  position: absolute;
+  bottom: 10%;
+  z-index: -2;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.strike:hover::after {
+  width: 100%;
+}
+**//
 
 .project-sub-head p {
   color: var(--fourth-color);
