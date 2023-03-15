@@ -372,32 +372,6 @@ a {
   transition: 0s;
 }
 
-//**
-.strike {
-  position: relative;
-  margin: 15px;
-}
-
-.strike::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 15px;
-  background: #a585ec;
-  position: absolute;
-  bottom: 10%;
-  z-index: -2;
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
-}
-
-.strike:hover::after {
-  width: 100%;
-}
-**//
-
 .project-sub-head p {
   color: var(--fourth-color);
   font-size: 18px;
