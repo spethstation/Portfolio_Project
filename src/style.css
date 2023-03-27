@@ -315,20 +315,22 @@ a {
 
 .port-bg {
   background-color: #f8f9fa;
-  border-bottom-right-radius: 80px 80px;
+  border-bottom-right-radius: 20px 20px;
   box-shadow: 3px 3px 3px #6b6b6b;
   margin-top: 2px;
 }
 
 .port-bg p {
-  padding: 10px 30px 8px 10px;
+  padding: 10px 15px;
   font-size: 15px;
   color: #6b6b6b;
   margin-bottom: 0px;
 }
 
 .port-heading {
-  padding-top: 20px;
+  padding: 12px 10px;
+  background: #e0e0e0;
+  margin-bottom: 0px;
 }
 
 .strike {
