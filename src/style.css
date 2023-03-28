@@ -82,17 +82,23 @@ a {
   transform: translate(2px, 2px);
 }
 
+.color-cells {
+  background: #a585ec;
+}
+
 .tech-stack p {
   line-height: 1em;
   font-weight: 600;
   padding-top: 8px;
   color: var(--fourth-color);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  text-shadow: 1px 2px 2px lightslategrey;
 }
 
 .tech-stack i {
-  font-size: 35px;
+  font-size: 40px;
+  text-shadow: 1px 2px 2px lightslategrey;
 }
 
 .tech-stack h2 {
@@ -204,6 +210,7 @@ a {
   border: 2px dashed #252525;
   max-width: 1100px;
   margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .hi-text {
