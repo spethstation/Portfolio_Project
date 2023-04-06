@@ -336,7 +336,8 @@ a {
 
 .port-heading {
   padding: 12px 10px 12px 15px;
-  background: #a585ec;
+  border: 2px solid var(--fourth-color);
+  background-color: #a585ec;
   border-top-right-radius: 20px 20px;
   margin: 20px 0px 0px 0px;
   box-shadow: 3px 5px 3px #6b6b6b;
